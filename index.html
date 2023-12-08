@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Конвертер валют</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter">
+    <h2>Конвертер валют</h2>
+    <div class="input-container">
+      <input type="number" id="amount" placeholder="Введіть суму">
+      <select id="fromCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="AUD">AUD</option>
+      </select>
+    </div>
+    <div class="output-container">
+      <p>Результат: <span id="result"></span></p>
+      <select id="toCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="AUD">AUD</option>
+      </select>
+    </div>
+    <button onclick="convertCurrency()">Конвертувати</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
